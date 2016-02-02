@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'kzicmee'
+            keyPassword 'KSZtsel8735'
+            storeFile file('C:/Users/zappa_000/AndroidStudioProjects/Keystore/Keystore.release.jks')
+            storePassword 'KStisaellu8735'
+        }
+    }
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+    defaultConfig {
+        applicationId "org.tselex.ziicme"
+        minSdkVersion 8
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile project(':commons-net-3.3')
+}

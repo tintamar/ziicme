@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.tselex.ziicme" >
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/zzz2"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Zcartevisite"
+            android:configChanges="orientation|screenSize"
+            android:enabled="true"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".Zreceptionliste"
+            android:configChanges="orientation|screenSize"
+            android:noHistory="true">
+        </activity>
+        <activity
+            android:name=".Zreceptiondetail"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name=".Zcontactenvoi"
+            android:configChanges="orientation|screenSize"
+            android:noHistory="true"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".Zvalidnumero"
+            android:configChanges="orientation|screenSize">
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".ZMyIntentService"
+            android:exported="false" >
+        </service>
+
+        <receiver
+            android:name=".ZMyReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".Zreceptionservice"
+            android:exported="false" >
+        </service>
+        <service
+            android:name=".ZrechGSMservice"
+            android:exported="false" >
+        </service>
+        <service
+            android:name=".ZcreGSMservice"
+            android:exported="false" >
+        </service>
+
+        <receiver
+            android:name=".ZSMSReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="999">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

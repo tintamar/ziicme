@@ -1,0 +1,15 @@
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/toast_layout_root"
+              android:orientation="horizontal"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:padding="10dp"
+              android:background="#d5e40c01"
+              >
+ <TextView android:id="@+id/texttoast"
+              android:layout_width="wrap_content"
+              android:layout_height="fill_parent"
+              android:background="@drawable/menudesbouton"
+              android:textSize="15sp"
+              />
+</LinearLayout>

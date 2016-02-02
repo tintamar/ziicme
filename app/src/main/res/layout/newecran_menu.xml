@@ -1,0 +1,181 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context="com.example.zappatix.affnumtel.Zmain"
+    android:background="#000000"
+    >
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="70dp"
+        android:text="@string/menucvbouton"
+        android:textStyle="bold"
+        android:id="@+id/buttoncv"
+        android:background="@drawable/menubouton"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_alignParentLeft="true"
+       />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="@string/menudembouton"
+        android:id="@+id/buttondem"
+        android:textStyle="bold"
+        android:background="@drawable/menubouton"
+        android:gravity="center_vertical|center_horizontal"
+
+        android:layout_below="@+id/buttoncv"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:text="@string/menudesbouton"
+    android:gravity="center_vertical|center_horizontal"
+    android:id="@+id/buttondest"
+    android:textStyle="bold"
+    android:background="@drawable/menubouton"
+    android:layout_below="@+id/buttondem"
+    android:layout_centerVertical="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
+    <ImageView
+        android:contentDescription="@string/ziicmebkg"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/zzz3"
+        android:id="@+id/imageView"
+        android:background="@drawable/circle"
+        android:layout_below="@+id/imagefr"
+        android:layout_centerHorizontal="true"/>
+   
+        <ImageView
+          android:layout_width="32dp"
+          android:layout_height="32dp"
+          android:background="@drawable/circleflag"
+          android:id="@+id/imagefr"
+          android:layout_marginTop="30dp"
+          android:layout_below="@+id/buttondest"
+          android:layout_alignLeft="@+id/imagenl"
+          android:layout_alignStart="@+id/imagenl"/>
+ 
+  
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/imagegb"
+            android:background="@drawable/circleflag"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_marginTop="23dp"/>
+  
+   
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/imagees"
+            android:background="@drawable/circleflag"
+            android:layout_alignTop="@+id/imagegb"
+            android:layout_toLeftOf="@+id/imageView"
+            android:layout_toStartOf="@+id/imageView"
+        />
+  
+  
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/imageeu"
+            android:background="@drawable/circleflag"
+            android:layout_marginTop="32dp"
+            android:layout_below="@+id/imagees"
+            android:layout_alignLeft="@+id/imagees"
+            android:layout_alignStart="@+id/imagees"/>
+  
+   
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/imagebe"
+            android:background="@drawable/circleflag"
+            android:layout_alignTop="@+id/imageeu"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView"/>
+  
+    
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/imagede"
+            android:background="@drawable/circleflag"
+            android:layout_below="@+id/imageeu"
+            android:layout_alignLeft="@+id/imageeu"
+            android:layout_alignStart="@+id/imageeu"
+            android:layout_marginTop="26dp"/>
+  
+   
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/imageit"
+            android:background="@drawable/circleflag"
+            android:layout_alignTop="@+id/imagede"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView"/>
+ 
+    
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/imagept"
+            android:background="@drawable/circleflag"
+            android:layout_below="@+id/imageView"
+            android:layout_toRightOf="@+id/imagees"
+            android:layout_toEndOf="@+id/imagees"/>
+  
+   
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/imagepl"
+            android:background="@drawable/circleflag"
+            android:layout_below="@+id/imageView"
+            android:layout_alignRight="@+id/imageView"
+            android:layout_alignEnd="@+id/imageView"/>
+  
+   
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/imagenl"
+            android:background="@drawable/circleflag"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/imagesu"
+        android:background="@drawable/circleflag"
+        android:layout_above="@+id/imagegb"
+        android:layout_alignLeft="@+id/imagepl"
+        android:layout_alignStart="@+id/imagepl"/>
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/imagedn"
+        android:background="@drawable/circleflag"
+        android:layout_above="@+id/imagegb"
+        android:layout_toRightOf="@+id/imagees"
+        android:layout_toEndOf="@+id/imagees"/>
+
+
+
+</RelativeLayout>
